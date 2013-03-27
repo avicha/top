@@ -14,12 +14,12 @@ class TOP
             self._session = config.session if config.session
             self._init = true
         else
-            throw new Exception "please input the appkey and the secret"
+            throw new Error "please input the appkey and the secret"
         @
     api : (config, requestType, callback)->
         self = @
         if !self._init
-            throw new Exception "please init the appkey and the secret"
+            throw new Error "please init the appkey and the secret"
         if !callback&&_.isFunction requestType
             callback = requestType
             requestType = 'get'
@@ -56,7 +56,7 @@ class TOP
     widget : (config, requestType, callback)-> 
         self = @
         if !self._init
-            throw new Exception "please init the appkey and the secret"
+            throw new Error "please init the appkey and the secret"
         if !callback&&_.isFunction requestType
             callback = requestType
             requestType = 'get'

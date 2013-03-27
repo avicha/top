@@ -1,6 +1,6 @@
 {
   "name": "yi-top",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "用于后台方便地调用淘宝的API",
   "keywords": [
     "淘宝",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "underscore" :  "1.4.4",
-    "yi-http" : "1.0.2",
+    "yi-http" : "1.0.3",
     "date-utils":"1.2.12"
   },
   "devDependencies": {

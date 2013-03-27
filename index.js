@@ -31,7 +31,7 @@
         }
         self._init = true;
       } else {
-        throw new Exception("please input the appkey and the secret");
+        throw new Error("please input the appkey and the secret");
       }
       return this;
     };
@@ -40,7 +40,7 @@
       var key, keys, md5, params, self, sign, str, _i, _len;
       self = this;
       if (!self._init) {
-        throw new Exception("please init the appkey and the secret");
+        throw new Error("please init the appkey and the secret");
       }
       if (!callback && _.isFunction(requestType)) {
         callback = requestType;
@@ -90,7 +90,7 @@
       var hmac, params, s, self, sign;
       self = this;
       if (!self._init) {
-        throw new Exception("please init the appkey and the secret");
+        throw new Error("please init the appkey and the secret");
       }
       if (!callback && _.isFunction(requestType)) {
         callback = requestType;
